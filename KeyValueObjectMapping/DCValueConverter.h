@@ -15,6 +15,10 @@
 @required
 - (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute dictionary:(NSDictionary *)dictionary parentObject:(id)parentObject;
 - (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute;
+<<<<<<< HEAD
 - (BOOL)canTransformValueForClass:(Class)klass;
+=======
+- (BOOL)canTransformValueForClass:(Class)cls;
+>>>>>>> Change varialble  to  because class is used in c++
 
 @end
