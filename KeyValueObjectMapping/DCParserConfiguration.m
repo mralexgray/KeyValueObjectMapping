@@ -33,11 +33,11 @@
 - (id)init {
     self = [super init];
     if (self) {
-        _arrayMappers = [[NSMutableArray alloc] init];
-        _objectMappers = [[NSMutableArray alloc] init];
-        _aggregators = [[NSMutableArray alloc] init];
-        _customInitializers = [[NSMutableArray alloc] init];
-        _customParsers = [[NSMutableArray alloc] init];
+        _arrayMappers = NSMutableArray.new;
+        _objectMappers = NSMutableArray.new;
+        _aggregators = NSMutableArray.new;
+        _customInitializers = NSMutableArray.new;
+        _customParsers = NSMutableArray.new;
         _splitToken = @"_";
         _nestedPrepertiesSplitToken = @".";
         _datePattern = @"eee MMM dd HH:mm:ss ZZZZ yyyy";

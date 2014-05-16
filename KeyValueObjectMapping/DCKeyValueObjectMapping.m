@@ -116,7 +116,7 @@
 }
 - (NSArray *)serializeObjectArray:(NSArray *)objectArray
 {
-    NSMutableArray *serializedObjects = [[NSMutableArray alloc] init];
+    NSMutableArray *serializedObjects = NSMutableArray.new;
     
     for (id object in objectArray) {
         [serializedObjects addObject:[self serializeObject:object]];

@@ -17,7 +17,6 @@
 		201F6F70153F789A009A24B9 /* DCAttributeSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */; };
 		201F6F73153F7C9E009A24B9 /* DCDictionaryRearranger.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F71153F7C9E009A24B9 /* DCDictionaryRearranger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201F6F74153F7C9E009A24B9 /* DCDictionaryRearranger.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */; };
-		205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B3153F02AA00693E13 /* SenTestingKit.framework */; };
 		205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B5153F02AA00693E13 /* UIKit.framework */; };
 		205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B7153F02AA00693E13 /* Foundation.framework */; };
 		205FD3BB153F02AA00693E13 /* KeyValueObjectMapping.framework in Resources */ = {isa = PBXBuildFile; fileRef = 205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */; };
@@ -69,6 +68,47 @@
 		20D62C201588EF2F00484122 /* DCNSSetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C1E1588EF2F00484122 /* DCNSSetConverter.m */; };
 		20D62C241588F8D700484122 /* DCSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C231588F8D700484122 /* DCSerializationTests.m */; };
 		2840FF7615E827F40047AF2E /* DCNSDateConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840FF7515E827F40047AF2E /* DCNSDateConverterTests.m */; };
+		7B6492221809071100A9E504 /* libKVOMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893117FAA68600F366C4 /* libKVOMap.a */; };
+		7B8B893317FAA68600F366C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893217FAA68600F366C4 /* Cocoa.framework */; };
+		7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B894317FAA68600F366C4 /* XCTest.framework */; };
+		7B8B895717FAA70B00F366C4 /* KVOMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8B893B17FAA68600F366C4 /* KVOMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B895817FAA74300F366C4 /* DCKeyValueObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */; };
+		7B8B895917FAA74300F366C4 /* DCPropertyFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3CF153F02F700693E13 /* DCPropertyFinder.m */; };
+		7B8B895A17FAA74300F366C4 /* DCAttributeSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */; };
+		7B8B895B17FAA74300F366C4 /* DCReferenceKeyParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3D4153F030800693E13 /* DCReferenceKeyParser.m */; };
+		7B8B895C17FAA74300F366C4 /* DCDictionaryRearranger.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */; };
+		7B8B895D17FAA74300F366C4 /* DCCustomInitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 207720FF15E3E406000A4FA3 /* DCCustomInitialize.m */; };
+		7B8B895E17FAA74300F366C4 /* DCCustomParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D0C2C015F51569001B7278 /* DCCustomParser.m */; };
+		7B8B895F17FAA74300F366C4 /* DCParserConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3D9153F031C00693E13 /* DCParserConfiguration.m */; };
+		7B8B896017FAA74300F366C4 /* DCNSArrayConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3E5153F033A00693E13 /* DCNSArrayConverter.m */; };
+		7B8B896117FAA74300F366C4 /* DCNSSetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C1E1588EF2F00484122 /* DCNSSetConverter.m */; };
+		7B8B896217FAA74300F366C4 /* DCNSDateConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3E7153F033A00693E13 /* DCNSDateConverter.m */; };
+		7B8B896317FAA74300F366C4 /* DCNSURLConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3E9153F033A00693E13 /* DCNSURLConverter.m */; };
+		7B8B896417FAA74300F366C4 /* DCSimpleConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3EB153F033A00693E13 /* DCSimpleConverter.m */; };
+		7B8B896517FAA74300F366C4 /* DCGenericConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3DF153F032F00693E13 /* DCGenericConverter.m */; };
+		7B8B896617FAA74300F366C4 /* DCDynamicAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3F6153F034D00693E13 /* DCDynamicAttribute.m */; };
+		7B8B896717FAA74300F366C4 /* DCObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3F8153F034D00693E13 /* DCObjectMapping.m */; };
+		7B8B896817FAA74300F366C4 /* DCArrayMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3FA153F034D00693E13 /* DCArrayMapping.m */; };
+		7B8B896917FAA74300F366C4 /* DCPropertyAggregator.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F5D153F56BE009A24B9 /* DCPropertyAggregator.m */; };
+		7B8B896A17FAA76A00F366C4 /* DCKeyValueObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B896B17FAA76A00F366C4 /* DCPropertyFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3CE153F02F700693E13 /* DCPropertyFinder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B896C17FAA76A00F366C4 /* DCAttributeSetter.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F6D153F789A009A24B9 /* DCAttributeSetter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B896D17FAA76A00F366C4 /* DCReferenceKeyParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3D3153F030800693E13 /* DCReferenceKeyParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B896E17FAA76A00F366C4 /* DCDictionaryRearranger.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F71153F7C9E009A24B9 /* DCDictionaryRearranger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B896F17FAA76A00F366C4 /* DCCustomInitialize.h in Headers */ = {isa = PBXBuildFile; fileRef = 207720FE15E3E406000A4FA3 /* DCCustomInitialize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897017FAA76A00F366C4 /* DCCustomParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D0C2BF15F51569001B7278 /* DCCustomParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897117FAA76A00F366C4 /* DCParserConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3D8153F031C00693E13 /* DCParserConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897217FAA76A00F366C4 /* DCNSArrayConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3E4153F033A00693E13 /* DCNSArrayConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897317FAA76A00F366C4 /* DCNSSetConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 20D62C1D1588EF2F00484122 /* DCNSSetConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897417FAA76A00F366C4 /* DCNSDateConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3E6153F033A00693E13 /* DCNSDateConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897517FAA76A00F366C4 /* DCNSURLConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3E8153F033A00693E13 /* DCNSURLConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897617FAA76A00F366C4 /* DCSimpleConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3EA153F033A00693E13 /* DCSimpleConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897717FAA76A00F366C4 /* DCValueConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3DD153F032F00693E13 /* DCValueConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897817FAA76A00F366C4 /* DCGenericConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3DE153F032F00693E13 /* DCGenericConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897917FAA76A00F366C4 /* DCDynamicAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3F5153F034D00693E13 /* DCDynamicAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897A17FAA76A00F366C4 /* DCObjectMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3F7153F034D00693E13 /* DCObjectMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897B17FAA76A00F366C4 /* DCArrayMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3F9153F034D00693E13 /* DCArrayMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B8B897C17FAA76A00F366C4 /* DCPropertyAggregator.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F5C153F56BE009A24B9 /* DCPropertyAggregator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +118,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 205FD3A2153F02AA00693E13;
 			remoteInfo = KeyValueObjectMapping;
+		};
+		7B8B894617FAA68600F366C4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 205FD396153F02AA00693E13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B8B893017FAA68600F366C4;
+			remoteInfo = KVOMap;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -99,8 +146,7 @@
 		205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FD3A7153F02AA00693E13 /* KeyValueObjectMapping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMapping-Info.plist"; sourceTree = "<group>"; };
 		205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyValueObjectMapping-Prefix.pch"; sourceTree = "<group>"; };
-		205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMappingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		205FD3B3153F02AA00693E13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FD3B5153F02AA00693E13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		205FD3B7153F02AA00693E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		205FD3BE153F02AA00693E13 /* KeyValueObjectMappingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMappingTests-Info.plist"; sourceTree = "<group>"; };
@@ -128,8 +174,8 @@
 		205FD3F8153F034D00693E13 /* DCObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCObjectMapping.m; sourceTree = "<group>"; };
 		205FD3F9153F034D00693E13 /* DCArrayMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCArrayMapping.h; sourceTree = "<group>"; };
 		205FD3FA153F034D00693E13 /* DCArrayMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCArrayMapping.m; sourceTree = "<group>"; };
-		205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCKeyValueObjectMapping.h; sourceTree = "<group>"; };
-		205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCKeyValueObjectMapping.m; sourceTree = "<group>"; };
+		205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCKeyValueObjectMapping.h; path = ../KeyValueObjectMapping/DCKeyValueObjectMapping.h; sourceTree = "<group>"; };
+		205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCKeyValueObjectMapping.m; path = ../KeyValueObjectMapping/DCKeyValueObjectMapping.m; sourceTree = "<group>"; };
 		205FD407153F03F000693E13 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		205FD408153F03F000693E13 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		205FD409153F03F000693E13 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
@@ -165,6 +211,17 @@
 		20D62C231588F8D700484122 /* DCSerializationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCSerializationTests.m; sourceTree = "<group>"; };
 		2840FF7415E827F40047AF2E /* DCNSDateConverterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNSDateConverterTests.h; sourceTree = "<group>"; };
 		2840FF7515E827F40047AF2E /* DCNSDateConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNSDateConverterTests.m; sourceTree = "<group>"; };
+		7B8B893117FAA68600F366C4 /* libKVOMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKVOMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8B893217FAA68600F366C4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		7B8B893517FAA68600F366C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B8B893617FAA68600F366C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7B8B893717FAA68600F366C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7B8B893A17FAA68600F366C4 /* KVOMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVOMap-Prefix.pch"; sourceTree = "<group>"; };
+		7B8B893B17FAA68600F366C4 /* KVOMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOMap.h; sourceTree = "<group>"; };
+		7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B8B894317FAA68600F366C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Mac-StaticLibrary.xcconfig"; path = "/Volumes/2T/ServiceData/AtoZ.framework/AtoZ/AtoZAutoBox/../../xcconfigs/Mac OS X/Mac-StaticLibrary.xcconfig"; sourceTree = "<absolute>"; };
+		7BB67F7E18F2F2D600B3AE9C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,9 +236,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */,
 				205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */,
 				205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B892E17FAA68600F366C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8B893317FAA68600F366C4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B893F17FAA68600F366C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B6492221809071100A9E504 /* libKVOMap.a in Frameworks */,
+				7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,13 +268,15 @@
 				201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */,
 			);
 			name = Setters;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD394153F02AA00693E13 = {
 			isa = PBXGroup;
 			children = (
-				205FD3A5153F02AA00693E13 /* KeyValueObjectMapping */,
+				7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */,
 				205FD3BC153F02AA00693E13 /* KeyValueObjectMappingTests */,
+				7B8B893817FAA68600F366C4 /* KVOMap */,
 				205FD3B2153F02AA00693E13 /* Frameworks */,
 				205FD3A4153F02AA00693E13 /* Products */,
 			);
@@ -211,26 +286,11 @@
 			isa = PBXGroup;
 			children = (
 				205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */,
-				205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */,
+				205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */,
+				7B8B893117FAA68600F366C4 /* libKVOMap.a */,
+				7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		205FD3A5153F02AA00693E13 /* KeyValueObjectMapping */ = {
-			isa = PBXGroup;
-			children = (
-				205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */,
-				205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */,
-				205FD3CD153F02EE00693E13 /* Finders */,
-				201F6F6C153F7885009A24B9 /* Setters */,
-				205FD3D2153F02FD00693E13 /* Utils */,
-				2077210315E3E40C000A4FA3 /* Objecs */,
-				205FD3D7153F030F00693E13 /* Configuration */,
-				205FD3DC153F032300693E13 /* Converters */,
-				205FD3F4153F034300693E13 /* Mappers */,
-				205FD3A6153F02AA00693E13 /* Supporting Files */,
-			);
-			path = KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3A6153F02AA00693E13 /* Supporting Files */ = {
@@ -240,14 +300,17 @@
 				205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3B2153F02AA00693E13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				205FD3B3153F02AA00693E13 /* SenTestingKit.framework */,
 				205FD3B5153F02AA00693E13 /* UIKit.framework */,
 				205FD3B7153F02AA00693E13 /* Foundation.framework */,
+				7B8B893217FAA68600F366C4 /* Cocoa.framework */,
+				7B8B894317FAA68600F366C4 /* XCTest.framework */,
+				7B8B893417FAA68600F366C4 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -304,6 +367,7 @@
 				205FD3CF153F02F700693E13 /* DCPropertyFinder.m */,
 			);
 			name = Finders;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3D2153F02FD00693E13 /* Utils */ = {
@@ -315,6 +379,7 @@
 				201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */,
 			);
 			name = Utils;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3D7153F030F00693E13 /* Configuration */ = {
@@ -324,6 +389,7 @@
 				205FD3D9153F031C00693E13 /* DCParserConfiguration.m */,
 			);
 			name = Configuration;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3DC153F032300693E13 /* Converters */ = {
@@ -335,6 +401,7 @@
 				205FD3DF153F032F00693E13 /* DCGenericConverter.m */,
 			);
 			name = Converters;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3E3153F033200693E13 /* Implementation */ = {
@@ -367,6 +434,7 @@
 				201F6F5D153F56BE009A24B9 /* DCPropertyAggregator.m */,
 			);
 			name = Mappers;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD406153F03E500693E13 /* Model */ = {
@@ -395,6 +463,37 @@
 				20D0C2C015F51569001B7278 /* DCCustomParser.m */,
 			);
 			name = Objecs;
+			path = ../KeyValueObjectMapping;
+			sourceTree = "<group>";
+		};
+		7B8B893417FAA68600F366C4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8B893517FAA68600F366C4 /* Foundation.framework */,
+				7B8B893617FAA68600F366C4 /* CoreData.framework */,
+				7B8B893717FAA68600F366C4 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7B8B893817FAA68600F366C4 /* KVOMap */ = {
+			isa = PBXGroup;
+			children = (
+				7BB67F7E18F2F2D600B3AE9C /* README.md */,
+				205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */,
+				205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */,
+				205FD3CD153F02EE00693E13 /* Finders */,
+				201F6F6C153F7885009A24B9 /* Setters */,
+				205FD3D2153F02FD00693E13 /* Utils */,
+				2077210315E3E40C000A4FA3 /* Objecs */,
+				205FD3D7153F030F00693E13 /* Configuration */,
+				205FD3DC153F032300693E13 /* Converters */,
+				205FD3F4153F034300693E13 /* Mappers */,
+				205FD3A6153F02AA00693E13 /* Supporting Files */,
+				7B8B893B17FAA68600F366C4 /* KVOMap.h */,
+				7B8B893A17FAA68600F366C4 /* KVOMap-Prefix.pch */,
+			);
+			path = KVOMap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,6 +522,33 @@
 				20D62C1F1588EF2F00484122 /* DCNSSetConverter.h in Headers */,
 				2077210015E3E406000A4FA3 /* DCCustomInitialize.h in Headers */,
 				20D0C2C115F51569001B7278 /* DCCustomParser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B892F17FAA68600F366C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8B895717FAA70B00F366C4 /* KVOMap.h in Headers */,
+				7B8B896A17FAA76A00F366C4 /* DCKeyValueObjectMapping.h in Headers */,
+				7B8B896B17FAA76A00F366C4 /* DCPropertyFinder.h in Headers */,
+				7B8B896C17FAA76A00F366C4 /* DCAttributeSetter.h in Headers */,
+				7B8B896D17FAA76A00F366C4 /* DCReferenceKeyParser.h in Headers */,
+				7B8B896E17FAA76A00F366C4 /* DCDictionaryRearranger.h in Headers */,
+				7B8B896F17FAA76A00F366C4 /* DCCustomInitialize.h in Headers */,
+				7B8B897017FAA76A00F366C4 /* DCCustomParser.h in Headers */,
+				7B8B897117FAA76A00F366C4 /* DCParserConfiguration.h in Headers */,
+				7B8B897217FAA76A00F366C4 /* DCNSArrayConverter.h in Headers */,
+				7B8B897317FAA76A00F366C4 /* DCNSSetConverter.h in Headers */,
+				7B8B897417FAA76A00F366C4 /* DCNSDateConverter.h in Headers */,
+				7B8B897517FAA76A00F366C4 /* DCNSURLConverter.h in Headers */,
+				7B8B897617FAA76A00F366C4 /* DCSimpleConverter.h in Headers */,
+				7B8B897717FAA76A00F366C4 /* DCValueConverter.h in Headers */,
+				7B8B897817FAA76A00F366C4 /* DCGenericConverter.h in Headers */,
+				7B8B897917FAA76A00F366C4 /* DCDynamicAttribute.h in Headers */,
+				7B8B897A17FAA76A00F366C4 /* DCObjectMapping.h in Headers */,
+				7B8B897B17FAA76A00F366C4 /* DCArrayMapping.h in Headers */,
+				7B8B897C17FAA76A00F366C4 /* DCPropertyAggregator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,8 +592,43 @@
 			);
 			name = KeyValueObjectMappingTests;
 			productName = KeyValueObjectMappingTests;
-			productReference = 205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7B8B893017FAA68600F366C4 /* KVOMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B8B895517FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMap" */;
+			buildPhases = (
+				7B8B892D17FAA68600F366C4 /* Sources */,
+				7B8B892E17FAA68600F366C4 /* Frameworks */,
+				7B8B892F17FAA68600F366C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KVOMap;
+			productName = KVOMap;
+			productReference = 7B8B893117FAA68600F366C4 /* libKVOMap.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7B8B894117FAA68600F366C4 /* KVOMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B8B895617FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMapTests" */;
+			buildPhases = (
+				7B8B893E17FAA68600F366C4 /* Sources */,
+				7B8B893F17FAA68600F366C4 /* Frameworks */,
+				7B8B894017FAA68600F366C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B8B894717FAA68600F366C4 /* PBXTargetDependency */,
+			);
+			name = KVOMapTests;
+			productName = KVOMapTests;
+			productReference = 7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -476,8 +637,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DC;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dchohfi;
+				TargetAttributes = {
+					7B8B894117FAA68600F366C4 = {
+						TestTargetID = 205FD3A2153F02AA00693E13;
+					};
+				};
 			};
 			buildConfigurationList = 205FD399153F02AA00693E13 /* Build configuration list for PBXProject "KeyValueObjectMapping" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -493,6 +659,8 @@
 			targets = (
 				205FD3A2153F02AA00693E13 /* KeyValueObjectMapping */,
 				205FD3B0153F02AA00693E13 /* KeyValueObjectMappingTests */,
+				7B8B893017FAA68600F366C4 /* KVOMap */,
+				7B8B894117FAA68600F366C4 /* KVOMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -514,6 +682,13 @@
 				205FD425153F041F00693E13 /* plist.plist in Resources */,
 				205FD426153F041F00693E13 /* tweet.json in Resources */,
 				205FD427153F041F00693E13 /* user.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B894017FAA68600F366C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,6 +799,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B8B892D17FAA68600F366C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B8B895817FAA74300F366C4 /* DCKeyValueObjectMapping.m in Sources */,
+				7B8B895917FAA74300F366C4 /* DCPropertyFinder.m in Sources */,
+				7B8B895A17FAA74300F366C4 /* DCAttributeSetter.m in Sources */,
+				7B8B895B17FAA74300F366C4 /* DCReferenceKeyParser.m in Sources */,
+				7B8B895C17FAA74300F366C4 /* DCDictionaryRearranger.m in Sources */,
+				7B8B895D17FAA74300F366C4 /* DCCustomInitialize.m in Sources */,
+				7B8B895E17FAA74300F366C4 /* DCCustomParser.m in Sources */,
+				7B8B895F17FAA74300F366C4 /* DCParserConfiguration.m in Sources */,
+				7B8B896017FAA74300F366C4 /* DCNSArrayConverter.m in Sources */,
+				7B8B896117FAA74300F366C4 /* DCNSSetConverter.m in Sources */,
+				7B8B896217FAA74300F366C4 /* DCNSDateConverter.m in Sources */,
+				7B8B896317FAA74300F366C4 /* DCNSURLConverter.m in Sources */,
+				7B8B896417FAA74300F366C4 /* DCSimpleConverter.m in Sources */,
+				7B8B896517FAA74300F366C4 /* DCGenericConverter.m in Sources */,
+				7B8B896617FAA74300F366C4 /* DCDynamicAttribute.m in Sources */,
+				7B8B896717FAA74300F366C4 /* DCObjectMapping.m in Sources */,
+				7B8B896817FAA74300F366C4 /* DCArrayMapping.m in Sources */,
+				7B8B896917FAA74300F366C4 /* DCPropertyAggregator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B8B893E17FAA68600F366C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -631,6 +838,11 @@
 			isa = PBXTargetDependency;
 			target = 205FD3A2153F02AA00693E13 /* KeyValueObjectMapping */;
 			targetProxy = 205FD3B9153F02AA00693E13 /* PBXContainerItemProxy */;
+		};
+		7B8B894717FAA68600F366C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B8B893017FAA68600F366C4 /* KVOMap */;
+			targetProxy = 7B8B894617FAA68600F366C4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -650,7 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -665,12 +877,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -678,7 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -686,12 +898,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -699,10 +910,7 @@
 		205FD3C8153F02AA00693E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -728,10 +936,7 @@
 		205FD3C9153F02AA00693E13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -757,9 +962,10 @@
 		205FD3CB153F02AA00693E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
@@ -768,21 +974,19 @@
 				INFOPLIST_FILE = "KeyValueObjectMappingTests/KeyValueObjectMappingTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					.fake_fw_testing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		205FD3CC153F02AA00693E13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
@@ -791,12 +995,143 @@
 				INFOPLIST_FILE = "KeyValueObjectMappingTests/KeyValueObjectMappingTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					.fake_fw_testing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		7B8B895117FAA68700F366C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B8B895217FAA68700F366C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B8B895317FAA68700F366C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7B8B895417FAA68700F366C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -826,6 +1161,24 @@
 			buildConfigurations = (
 				205FD3CB153F02AA00693E13 /* Debug */,
 				205FD3CC153F02AA00693E13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B8B895517FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B8B895117FAA68700F366C4 /* Debug */,
+				7B8B895217FAA68700F366C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B8B895617FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B8B895317FAA68700F366C4 /* Debug */,
+				7B8B895417FAA68700F366C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

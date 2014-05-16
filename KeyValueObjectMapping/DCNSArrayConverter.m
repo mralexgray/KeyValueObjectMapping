@@ -70,7 +70,7 @@
     return [NSArray arrayWithArray:valuesHolder];
 }
 
-- (BOOL)canTransformValueForClass:(Class)class {
-    return [class isSubclassOfClass:[NSArray class]];
+- (BOOL)canTransformValueForClass:(Class)klass {
+    return [klass isSubclassOfClass:[NSArray class]];
 }
 @end
