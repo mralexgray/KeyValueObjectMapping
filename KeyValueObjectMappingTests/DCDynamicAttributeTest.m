@@ -30,7 +30,7 @@
     STAssertFalse([attribute isPrimitive], @"Should be a class");
     STAssertFalse([attribute isIdType], @"Should not be and id type");
     STAssertTrue([attribute isValidObject], @"Should not be a valid object");
-    STAssertEquals(attribute.objectMapping.classReference, [NSString class], @"Should be NSString class");
+    STAssertEquals(attribute.objectMapping.classReference, NSString.class, @"Should be NSString class");
     STAssertEqualObjects(attribute.typeName, @"NSString", @"Should be a NSString attribute");
     STAssertEqualObjects(attribute.objectMapping.attributeName, @"adress", @"AttributeName should be adress");
 }
@@ -63,7 +63,7 @@
     STAssertFalse([attribute isPrimitive], @"Should be a class");
     STAssertFalse([attribute isIdType], @"Should not be and id type");
     STAssertTrue([attribute isValidObject], @"Should not be a valid object");
-    STAssertEquals(attribute.objectMapping.classReference, [NSString class], @"Should be NSString class");
+    STAssertEquals(attribute.objectMapping.classReference, NSString.class, @"Should be NSString class");
     STAssertEqualObjects(attribute.typeName, @"NSString", @"Should be a NSString attribute");
     STAssertEqualObjects(attribute.objectMapping.attributeName, @"adress", @"AttributeName should be adress");
 }

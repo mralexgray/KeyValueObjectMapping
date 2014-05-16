@@ -17,7 +17,6 @@
 		201F6F70153F789A009A24B9 /* DCAttributeSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */; };
 		201F6F73153F7C9E009A24B9 /* DCDictionaryRearranger.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F71153F7C9E009A24B9 /* DCDictionaryRearranger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201F6F74153F7C9E009A24B9 /* DCDictionaryRearranger.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */; };
-		205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B3153F02AA00693E13 /* SenTestingKit.framework */; };
 		205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B5153F02AA00693E13 /* UIKit.framework */; };
 		205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B7153F02AA00693E13 /* Foundation.framework */; };
 		205FD3BB153F02AA00693E13 /* KeyValueObjectMapping.framework in Resources */ = {isa = PBXBuildFile; fileRef = 205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */; };
@@ -69,12 +68,9 @@
 		20D62C201588EF2F00484122 /* DCNSSetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C1E1588EF2F00484122 /* DCNSSetConverter.m */; };
 		20D62C241588F8D700484122 /* DCSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C231588F8D700484122 /* DCSerializationTests.m */; };
 		2840FF7615E827F40047AF2E /* DCNSDateConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840FF7515E827F40047AF2E /* DCNSDateConverterTests.m */; };
+		7B6492221809071100A9E504 /* libKVOMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893117FAA68600F366C4 /* libKVOMap.a */; };
 		7B8B893317FAA68600F366C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893217FAA68600F366C4 /* Cocoa.framework */; };
 		7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B894317FAA68600F366C4 /* XCTest.framework */; };
-		7B8B894517FAA68600F366C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893217FAA68600F366C4 /* Cocoa.framework */; };
-		7B8B894817FAA68600F366C4 /* libKVOMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893117FAA68600F366C4 /* libKVOMap.a */; };
-		7B8B894E17FAA68600F366C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B8B894C17FAA68600F366C4 /* InfoPlist.strings */; };
-		7B8B895017FAA68600F366C4 /* KVOMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B894F17FAA68600F366C4 /* KVOMapTests.m */; };
 		7B8B895717FAA70B00F366C4 /* KVOMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8B893B17FAA68600F366C4 /* KVOMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B8B895817FAA74300F366C4 /* DCKeyValueObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */; };
 		7B8B895917FAA74300F366C4 /* DCPropertyFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3CF153F02F700693E13 /* DCPropertyFinder.m */; };
@@ -150,8 +146,7 @@
 		205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMapping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FD3A7153F02AA00693E13 /* KeyValueObjectMapping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMapping-Info.plist"; sourceTree = "<group>"; };
 		205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyValueObjectMapping-Prefix.pch"; sourceTree = "<group>"; };
-		205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMappingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		205FD3B3153F02AA00693E13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMappingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		205FD3B5153F02AA00693E13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		205FD3B7153F02AA00693E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		205FD3BE153F02AA00693E13 /* KeyValueObjectMappingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMappingTests-Info.plist"; sourceTree = "<group>"; };
@@ -179,8 +174,8 @@
 		205FD3F8153F034D00693E13 /* DCObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCObjectMapping.m; sourceTree = "<group>"; };
 		205FD3F9153F034D00693E13 /* DCArrayMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCArrayMapping.h; sourceTree = "<group>"; };
 		205FD3FA153F034D00693E13 /* DCArrayMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCArrayMapping.m; sourceTree = "<group>"; };
-		205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCKeyValueObjectMapping.h; sourceTree = "<group>"; };
-		205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCKeyValueObjectMapping.m; sourceTree = "<group>"; };
+		205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DCKeyValueObjectMapping.h; path = ../KeyValueObjectMapping/DCKeyValueObjectMapping.h; sourceTree = "<group>"; };
+		205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DCKeyValueObjectMapping.m; path = ../KeyValueObjectMapping/DCKeyValueObjectMapping.m; sourceTree = "<group>"; };
 		205FD407153F03F000693E13 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		205FD408153F03F000693E13 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		205FD409153F03F000693E13 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
@@ -225,9 +220,8 @@
 		7B8B893B17FAA68600F366C4 /* KVOMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOMap.h; sourceTree = "<group>"; };
 		7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8B894317FAA68600F366C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7B8B894B17FAA68600F366C4 /* KVOMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KVOMapTests-Info.plist"; sourceTree = "<group>"; };
-		7B8B894D17FAA68600F366C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B8B894F17FAA68600F366C4 /* KVOMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOMapTests.m; sourceTree = "<group>"; };
+		7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Mac-StaticLibrary.xcconfig"; path = "/Volumes/2T/ServiceData/AtoZ.framework/AtoZ/AtoZAutoBox/../../xcconfigs/Mac OS X/Mac-StaticLibrary.xcconfig"; sourceTree = "<absolute>"; };
+		7BB67F7E18F2F2D600B3AE9C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,7 +236,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */,
 				205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */,
 				205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */,
 			);
@@ -260,8 +253,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B8B894817FAA68600F366C4 /* libKVOMap.a in Frameworks */,
-				7B8B894517FAA68600F366C4 /* Cocoa.framework in Frameworks */,
+				7B6492221809071100A9E504 /* libKVOMap.a in Frameworks */,
 				7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,15 +268,15 @@
 				201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */,
 			);
 			name = Setters;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD394153F02AA00693E13 = {
 			isa = PBXGroup;
 			children = (
-				205FD3A5153F02AA00693E13 /* KeyValueObjectMapping */,
+				7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */,
 				205FD3BC153F02AA00693E13 /* KeyValueObjectMappingTests */,
 				7B8B893817FAA68600F366C4 /* KVOMap */,
-				7B8B894917FAA68600F366C4 /* KVOMapTests */,
 				205FD3B2153F02AA00693E13 /* Frameworks */,
 				205FD3A4153F02AA00693E13 /* Products */,
 			);
@@ -294,28 +286,11 @@
 			isa = PBXGroup;
 			children = (
 				205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */,
-				205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */,
+				205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */,
 				7B8B893117FAA68600F366C4 /* libKVOMap.a */,
 				7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		205FD3A5153F02AA00693E13 /* KeyValueObjectMapping */ = {
-			isa = PBXGroup;
-			children = (
-				205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */,
-				205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */,
-				205FD3CD153F02EE00693E13 /* Finders */,
-				201F6F6C153F7885009A24B9 /* Setters */,
-				205FD3D2153F02FD00693E13 /* Utils */,
-				2077210315E3E40C000A4FA3 /* Objecs */,
-				205FD3D7153F030F00693E13 /* Configuration */,
-				205FD3DC153F032300693E13 /* Converters */,
-				205FD3F4153F034300693E13 /* Mappers */,
-				205FD3A6153F02AA00693E13 /* Supporting Files */,
-			);
-			path = KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3A6153F02AA00693E13 /* Supporting Files */ = {
@@ -325,12 +300,12 @@
 				205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3B2153F02AA00693E13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				205FD3B3153F02AA00693E13 /* SenTestingKit.framework */,
 				205FD3B5153F02AA00693E13 /* UIKit.framework */,
 				205FD3B7153F02AA00693E13 /* Foundation.framework */,
 				7B8B893217FAA68600F366C4 /* Cocoa.framework */,
@@ -392,6 +367,7 @@
 				205FD3CF153F02F700693E13 /* DCPropertyFinder.m */,
 			);
 			name = Finders;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3D2153F02FD00693E13 /* Utils */ = {
@@ -403,6 +379,7 @@
 				201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */,
 			);
 			name = Utils;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3D7153F030F00693E13 /* Configuration */ = {
@@ -412,6 +389,7 @@
 				205FD3D9153F031C00693E13 /* DCParserConfiguration.m */,
 			);
 			name = Configuration;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3DC153F032300693E13 /* Converters */ = {
@@ -423,6 +401,7 @@
 				205FD3DF153F032F00693E13 /* DCGenericConverter.m */,
 			);
 			name = Converters;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD3E3153F033200693E13 /* Implementation */ = {
@@ -455,6 +434,7 @@
 				201F6F5D153F56BE009A24B9 /* DCPropertyAggregator.m */,
 			);
 			name = Mappers;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		205FD406153F03E500693E13 /* Model */ = {
@@ -483,6 +463,7 @@
 				20D0C2C015F51569001B7278 /* DCCustomParser.m */,
 			);
 			name = Objecs;
+			path = ../KeyValueObjectMapping;
 			sourceTree = "<group>";
 		};
 		7B8B893417FAA68600F366C4 /* Other Frameworks */ = {
@@ -498,28 +479,21 @@
 		7B8B893817FAA68600F366C4 /* KVOMap */ = {
 			isa = PBXGroup;
 			children = (
+				7BB67F7E18F2F2D600B3AE9C /* README.md */,
+				205FD401153F035700693E13 /* DCKeyValueObjectMapping.h */,
+				205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */,
+				205FD3CD153F02EE00693E13 /* Finders */,
+				201F6F6C153F7885009A24B9 /* Setters */,
+				205FD3D2153F02FD00693E13 /* Utils */,
+				2077210315E3E40C000A4FA3 /* Objecs */,
+				205FD3D7153F030F00693E13 /* Configuration */,
+				205FD3DC153F032300693E13 /* Converters */,
+				205FD3F4153F034300693E13 /* Mappers */,
+				205FD3A6153F02AA00693E13 /* Supporting Files */,
 				7B8B893B17FAA68600F366C4 /* KVOMap.h */,
 				7B8B893A17FAA68600F366C4 /* KVOMap-Prefix.pch */,
 			);
 			path = KVOMap;
-			sourceTree = "<group>";
-		};
-		7B8B894917FAA68600F366C4 /* KVOMapTests */ = {
-			isa = PBXGroup;
-			children = (
-				7B8B894F17FAA68600F366C4 /* KVOMapTests.m */,
-				7B8B894A17FAA68600F366C4 /* Supporting Files */,
-			);
-			path = KVOMapTests;
-			sourceTree = "<group>";
-		};
-		7B8B894A17FAA68600F366C4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B8B894B17FAA68600F366C4 /* KVOMapTests-Info.plist */,
-				7B8B894C17FAA68600F366C4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -618,8 +592,8 @@
 			);
 			name = KeyValueObjectMappingTests;
 			productName = KeyValueObjectMappingTests;
-			productReference = 205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		7B8B893017FAA68600F366C4 /* KVOMap */ = {
 			isa = PBXNativeTarget;
@@ -663,7 +637,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = DC;
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dchohfi;
 				TargetAttributes = {
 					7B8B894117FAA68600F366C4 = {
@@ -715,7 +689,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B8B894E17FAA68600F366C4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -855,7 +828,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B8B895017FAA68600F366C4 /* KVOMapTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -883,14 +855,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		7B8B894C17FAA68600F366C4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B8B894D17FAA68600F366C4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -898,7 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -913,12 +877,12 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
+				ONLY_ACTIVE_ARCH = YES;
 			};
 			name = Debug;
 		};
@@ -926,7 +890,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -934,12 +898,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -947,10 +910,7 @@
 		205FD3C8153F02AA00693E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -976,10 +936,7 @@
 		205FD3C9153F02AA00693E13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
+				COMBINE_HIDPI_IMAGES = YES;
 				CONTENTS_FOLDER_PATH = "$(WRAPPER_NAME)/Versions/$(FRAMEWORK_VERSION)";
 				DEAD_CODE_STRIPPING = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1005,9 +962,10 @@
 		205FD3CB153F02AA00693E13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
@@ -1016,21 +974,19 @@
 				INFOPLIST_FILE = "KeyValueObjectMappingTests/KeyValueObjectMappingTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					.fake_fw_testing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
 		205FD3CC153F02AA00693E13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"$(inherited)",
 				);
 				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = NO;
@@ -1039,21 +995,20 @@
 				INFOPLIST_FILE = "KeyValueObjectMappingTests/KeyValueObjectMappingTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
-					SenTestingKit,
-					"-framework",
 					.fake_fw_testing,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
 		7B8B895117FAA68700F366C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1062,7 +1017,9 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1073,19 +1030,21 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		7B8B895217FAA68700F366C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B94F54F189C30C0002C55CD /* Mac-StaticLibrary.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -1096,15 +1055,17 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(PRODUCT_NAME)";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -1112,7 +1073,6 @@
 		7B8B895317FAA68700F366C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyValueObjectMapping.framework/Versions/A/KeyValueObjectMapping";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1136,7 +1096,6 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1148,7 +1107,6 @@
 		7B8B895417FAA68700F366C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyValueObjectMapping.framework/Versions/A/KeyValueObjectMapping";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -1170,7 +1128,6 @@
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -1215,6 +1172,7 @@
 				7B8B895217FAA68700F366C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B8B895617FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMapTests" */ = {
 			isa = XCConfigurationList;
@@ -1223,6 +1181,7 @@
 				7B8B895417FAA68700F366C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
