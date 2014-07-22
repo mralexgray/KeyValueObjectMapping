@@ -11,8 +11,8 @@
 #import "DCParserConfiguration.h"
 
 @interface DCGenericConverter : NSObject
-- (id)initWithConfiguration:(DCParserConfiguration *) configuration;
+- (id)initWithConfiguration:(DCParserConfiguration*) configuration;
 
-- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute dictionary:(NSDictionary *)dictionary parentObject:(id)parentObject;
-- (id)serializeValue:(id)value forDynamicAttribute: (DCDynamicAttribute *) attribute;
+- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute dictionary:(NSDictionary*)dictionary parentObject:(id)parentObject;
+- (id)serializeValue:(id)value forDynamicAttribute: (DCDynamicAttribute*) attribute;
 @end

@@ -11,6 +11,6 @@
 
 @interface DCNSURLConverter : NSObject <DCValueConverter>
 
-+ (DCNSURLConverter *) urlConverter;
++ (DCNSURLConverter*) urlConverter;
 
 @end

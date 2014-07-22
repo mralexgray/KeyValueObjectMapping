@@ -27,14 +27,14 @@
 @synthesize configuration = _configuration;
 @synthesize classToGenerate = _classToGenerate;
 
-+ (DCKeyValueObjectMapping *) mapperForClass: (Class) classToGenerate {
++ (DCKeyValueObjectMapping*) mapperForClass: (Class) classToGenerate {
     return [self mapperForClass:classToGenerate andConfiguration:[DCParserConfiguration configuration]];
 }
-+ (DCKeyValueObjectMapping *) mapperForClass: (Class) classToGenerate andConfiguration: (DCParserConfiguration *) configuration {
++ (DCKeyValueObjectMapping*) mapperForClass: (Class) classToGenerate andConfiguration: (DCParserConfiguration*) configuration {
     return [[self alloc] initWithClass: classToGenerate
                       forConfiguration: configuration];
 }
-- (id) initWithClass: (Class) classToGenerate forConfiguration: (DCParserConfiguration *) configuration {
+- (id) initWithClass: (Class) classToGenerate forConfiguration: (DCParserConfiguration*) configuration {
     self = [super init];
     if (self) {
         self.configuration = configuration;
@@ -49,11 +49,11 @@
     return self;   
 }
 
-- (NSArray *)parseArray:(NSArray *)array {
+- (NSArray*)parseArray:(NSArray*)array {
     return [self parseArray:array forParentObject:nil];
 }
 
-- (NSArray *)parseArray:(NSArray *)array forParentObject:(id)parentObject {
+- (NSArray*)parseArray:(NSArray*)array forParentObject:(id)parentObject {
     if(!array){
         return nil;
     }
@@ -65,11 +65,11 @@
     return [NSArray arrayWithArray:values];
 }
 
-- (id)parseDictionary:(NSDictionary *)dictionary {
+- (id)parseDictionary:(NSDictionary*)dictionary {
     return [self parseDictionary:dictionary forParentObject:nil];
 }
 
-- (id)parseDictionary:(NSDictionary *)dictionary forParentObject:(id)parentObject {
+- (id)parseDictionary:(NSDictionary*)dictionary forParentObject:(id)parentObject {
     if (!dictionary || !self.classToGenerate) {
         return nil;
     }
@@ -78,7 +78,7 @@
     [self setValuesOnObject:object withDictionary:dictionary];
     return object;
 }
-- (void) setValuesOnObject: (id) object withDictionary: (NSDictionary *) dictionary {
+- (void) setValuesOnObject: (id) object withDictionary: (NSDictionary*) dictionary {
     if([object class] != self.classToGenerate){
         return;
     }
@@ -96,7 +96,7 @@
         }
     }
 }
-- (NSDictionary *)serializeObject:(id)object
+- (NSDictionary*)serializeObject:(id)object
 {    
     NSMutableDictionary *serializedObject = [[NSMutableDictionary alloc] init];
     
@@ -114,7 +114,7 @@
     
     return [NSDictionary dictionaryWithDictionary:serializedObject];
 }
-- (NSArray *)serializeObjectArray:(NSArray *)objectArray
+- (NSArray*)serializeObjectArray:(NSArray*)objectArray
 {
     NSMutableArray *serializedObjects = [[NSMutableArray alloc] init];
     
@@ -127,8 +127,8 @@
 
 - (void) parseValue: (id) value
           forObject: (id) object
-        inAttribute: (DCDynamicAttribute *) dynamicAttribute
-         dictionary: (NSDictionary *) dictionary {
+        inAttribute: (DCDynamicAttribute*) dynamicAttribute
+         dictionary: (NSDictionary*) dictionary {
     DCObjectMapping *objectMapping = dynamicAttribute.objectMapping;
     NSString *attributeName = objectMapping.attributeName;
 
@@ -145,7 +145,7 @@
                           onObject:object];
 }
 
-- (void) serializeValue: (id) value toDictionary: (NSMutableDictionary *) dictionary inAttribute: (DCDynamicAttribute *) dynamicAttribute {
+- (void) serializeValue: (id) value toDictionary: (NSMutableDictionary*) dictionary inAttribute: (DCDynamicAttribute*) dynamicAttribute {
     DCObjectMapping *objectMapping = dynamicAttribute.objectMapping;
     if (objectMapping.converter)
         value = [objectMapping.converter serializeValue:value forDynamicAttribute:dynamicAttribute];
@@ -154,7 +154,7 @@
     [dictionary setValue:value forKeyPath:objectMapping.keyReference];
 }
 
-- (void)updateObject:(id)object withDictionary:(NSDictionary *)dictionary {
+- (void)updateObject:(id)object withDictionary:(NSDictionary*)dictionary {
     if (!dictionary || !self.classToGenerate || !object || ![object isKindOfClass:self.classToGenerate])
         return;
 

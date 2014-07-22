@@ -12,6 +12,6 @@
 @class DCParserConfiguration;
 @interface DCNSSetConverter : NSObject <DCValueConverter>
 
-+ (DCNSSetConverter *) setConverterForConfiguration: (DCParserConfiguration *) configuration;
++ (DCNSSetConverter*) setConverterForConfiguration: (DCParserConfiguration*) configuration;
 
 @end

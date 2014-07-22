@@ -13,6 +13,6 @@
 @property(nonatomic, readonly) NSNumber *latitude;
 @property(nonatomic, readonly) NSNumber *longitude;
 
--(id)initWithLatitude: (NSNumber *) latitude andLongitude: (NSNumber *) longitude;
+-(id)initWithLatitude: (NSNumber*) latitude andLongitude: (NSNumber*) longitude;
 
 @end

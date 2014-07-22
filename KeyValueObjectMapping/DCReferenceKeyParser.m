@@ -11,11 +11,11 @@
 @implementation DCReferenceKeyParser
 @synthesize splitToken;
 
-+ (DCReferenceKeyParser *) parserForToken: (NSString *) _splitToken {
++ (DCReferenceKeyParser*) parserForToken:(NSString*)_splitToken {
     return [[self alloc] initWithSplitToken:_splitToken];
 }
 
-- (id)initWithSplitToken: (NSString *) _splitToken
+- (id)initWithSplitToken:(NSString*)_splitToken
 {
     self = [super init];
     if (self) {
@@ -24,7 +24,7 @@
     return self;
 }
 
-- (NSString *) splitKeyAndMakeCamelcased: (NSString *) key {
+- (NSString*) splitKeyAndMakeCamelcased:(NSString*)key {
     if(!key || [key isEqualToString:@""] || splitToken == nil)
         return @"";
     NSArray *splitedKeys = [key componentsSeparatedByString:splitToken];

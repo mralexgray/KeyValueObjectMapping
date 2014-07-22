@@ -11,15 +11,15 @@
 
 @implementation DCNSURLConverter
 
-+ (DCNSURLConverter *) urlConverter {
++ (DCNSURLConverter*) urlConverter {
     return [[self alloc] init];
 }
 
-- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute dictionary:(NSDictionary *)dictionary parentObject:(id)parentObject {
+- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute dictionary:(NSDictionary*)dictionary parentObject:(id)parentObject {
     return [NSURL URLWithString:value];
 }
-- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute {
-    return [((NSURL *)value) absoluteString];
+- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute {
+    return [((NSURL*)value) absoluteString];
 }
 - (BOOL)canTransformValueForClass: (Class) class {
     return [class isSubclassOfClass:[NSURL class]];

@@ -13,22 +13,22 @@
 
 @property(nonatomic, readonly) Class classToGenerate;
 
-+ (DCKeyValueObjectMapping *) mapperForClass: (Class) classToGenerate;
-+ (DCKeyValueObjectMapping *) mapperForClass: (Class) classToGenerate 
-                            andConfiguration: (DCParserConfiguration *) configuration;
++ (DCKeyValueObjectMapping*) mapperForClass: (Class) classToGenerate;
++ (DCKeyValueObjectMapping*) mapperForClass: (Class) classToGenerate 
+                            andConfiguration: (DCParserConfiguration*) configuration;
 
 - (id)initWithClass: (Class) classToGenerate 
-   forConfiguration: (DCParserConfiguration *) configuration;
+   forConfiguration: (DCParserConfiguration*) configuration;
 
-- (id)parseDictionary:(NSDictionary *)dictionary;
-- (id)parseDictionary:(NSDictionary *)dictionary forParentObject:(id)parentObject;
+- (id)parseDictionary:(NSDictionary*)dictionary;
+- (id)parseDictionary:(NSDictionary*)dictionary forParentObject:(id)parentObject;
 
-- (NSArray *)parseArray:(NSArray *)array;
-- (NSArray *)parseArray:(NSArray *)array forParentObject:(id)parentObject;
+- (NSArray*)parseArray:(NSArray*)array;
+- (NSArray*)parseArray:(NSArray*)array forParentObject:(id)parentObject;
 
-- (NSDictionary *)serializeObject:(id)object;
-- (NSArray *)serializeObjectArray:(NSArray *)objectArray;
+- (NSDictionary*)serializeObject:(id)object;
+- (NSArray*)serializeObjectArray:(NSArray*)objectArray;
 
-- (void)updateObject:(id)object withDictionary:(NSDictionary *)dictionary;
+- (void)updateObject:(id)object withDictionary:(NSDictionary*)dictionary;
 
 @end

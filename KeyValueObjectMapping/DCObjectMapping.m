@@ -22,8 +22,8 @@
     return self;
 }
 
-+ (DCObjectMapping *) mapKeyPath: (NSString *) keyPath 
-                     toAttribute: (NSString *) attributeName 
++ (DCObjectMapping*) mapKeyPath:(NSString*)keyPath 
+                     toAttribute:(NSString*)attributeName 
                          onClass: (Class) attributeClass {
     
     return [[self alloc] initWithKeyPath:keyPath 
@@ -32,8 +32,8 @@
                                converter:nil];
 }
 
-+ (DCObjectMapping *) mapKeyPath: (NSString *) keyPath 
-                     toAttribute: (NSString *) attributeName 
++ (DCObjectMapping*) mapKeyPath:(NSString*)keyPath 
+                     toAttribute:(NSString*)attributeName 
                          onClass: (Class) attributeClass
                        converter:(id <DCValueConverter>)converter {
     return [[self alloc] initWithKeyPath:keyPath 
@@ -42,8 +42,8 @@
                                converter:converter];
 }
 
-- (id)initWithKeyPath: (NSString *) keyReference
-          toAttribute: (NSString *) attributeName
+- (id)initWithKeyPath:(NSString*)keyReference
+          toAttribute:(NSString*)attributeName
               onClass: (Class) classReference
             converter: (id <DCValueConverter>) converter {
     
@@ -57,7 +57,7 @@
     return self;
 }
 
-- (BOOL) sameKey: (NSString *) key andClassReference: (Class) classReference {
+- (BOOL) sameKey:(NSString*)key andClassReference: (Class) classReference {
     BOOL sameProperty = [self.keyReference isEqualToString:key];
     if( sameProperty && self.classReference == classReference){
         return YES;

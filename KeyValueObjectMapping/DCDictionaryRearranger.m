@@ -14,7 +14,7 @@
 @implementation DCDictionaryRearranger
 
 
-+ (NSDictionary *) rearrangeDictionary: (NSDictionary *) dictionary forConfiguration: (DCParserConfiguration *) configuration {
++ (NSDictionary*) rearrangeDictionary: (NSDictionary*) dictionary forConfiguration: (DCParserConfiguration*) configuration {
     NSMutableArray* aggregators = [NSMutableArray arrayWithArray:[[configuration.aggregators reverseObjectEnumerator] allObjects]];
     NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionary];
     if(aggregators && [aggregators count] > 0){

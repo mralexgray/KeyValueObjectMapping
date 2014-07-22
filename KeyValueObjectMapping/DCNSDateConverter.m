@@ -11,18 +11,18 @@
 
 @interface DCNSDateConverter()
 @property(nonatomic, strong) NSString *pattern;
-- (BOOL) validDouble: (NSString *) doubleValue;
+- (BOOL) validDouble:(NSString*)doubleValue;
 @end
 
 @implementation DCNSDateConverter
 @synthesize pattern = _pattern;
 
 
-+ (DCNSDateConverter *) dateConverterForPattern: (NSString *) pattern{
++ (DCNSDateConverter*) dateConverterForPattern:(NSString*)pattern{
     return [[self alloc] initWithDatePattern: pattern];
 }
 
-- (id) initWithDatePattern: (NSString *) pattern {
+- (id) initWithDatePattern:(NSString*)pattern {
     self = [super init];
     if (self) {
         _pattern = pattern;
@@ -30,7 +30,7 @@
     return self;
 }
 
-- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute dictionary:(NSDictionary *)dictionary parentObject:(id)parentObject {
+- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute dictionary:(NSDictionary*)dictionary parentObject:(id)parentObject {
     BOOL validDouble = [self validDouble:[NSString stringWithFormat:@"%@", value]];
     if(validDouble){
         return [NSDate dateWithTimeIntervalSince1970:[value doubleValue]];
@@ -40,7 +40,7 @@
         return [formatter dateFromString:value];
     }
 }
-- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute {
+- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute {
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = self.pattern;
     return [formatter stringFromDate:value];    
@@ -48,7 +48,7 @@
 - (BOOL)canTransformValueForClass: (Class) class {
     return [class isSubclassOfClass:[NSDate class]];
 }
-- (BOOL) validDouble: (NSString *) doubleValue {
+- (BOOL) validDouble:(NSString*)doubleValue {
   return [[[NSNumberFormatter alloc] init] numberFromString:doubleValue] != nil;
 }
 @end

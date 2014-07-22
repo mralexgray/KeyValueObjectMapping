@@ -13,8 +13,8 @@
 @property(nonatomic, readonly) NSSet *keysToAggregate;
 @property(nonatomic, readonly) NSString *attribute;
 
-+ (DCPropertyAggregator *) aggregateKeys: (NSSet *) keys intoAttribute: (NSString *) attribute;
++ (DCPropertyAggregator*) aggregateKeys: (NSSet*) keys intoAttribute:(NSString*)attribute;
 
-- (NSDictionary *) aggregateKeysOnDictionary: (NSDictionary *) baseDictionary;
+- (NSDictionary*) aggregateKeysOnDictionary: (NSDictionary*) baseDictionary;
 
 @end

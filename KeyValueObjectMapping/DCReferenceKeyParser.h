@@ -12,7 +12,7 @@
 
 @property(nonatomic, readonly) NSString *splitToken;
 
-+ (DCReferenceKeyParser *) parserForToken: (NSString *) splitToken;
-- (NSString *) splitKeyAndMakeCamelcased: (NSString *) key;
++ (DCReferenceKeyParser*) parserForToken:(NSString*)splitToken;
+- (NSString*) splitKeyAndMakeCamelcased:(NSString*)key;
 
 @end

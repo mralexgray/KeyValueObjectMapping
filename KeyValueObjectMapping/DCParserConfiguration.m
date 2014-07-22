@@ -26,7 +26,7 @@
 @synthesize customInitializers = _customInitializers;
 @synthesize customParsers = _customParsers;
 
-+ (DCParserConfiguration *) configuration {
++ (DCParserConfiguration*) configuration {
     return [[self alloc] init];
 }
 
@@ -45,7 +45,7 @@
     return self;
 }
 
-- (void)setSplitToken:(NSString *)splitToken
+- (void)setSplitToken:(NSString*)splitToken
 {
     if (splitToken &&
         ![splitToken isEqualToString:_splitToken] &&
@@ -54,28 +54,28 @@
     }
 }
 
-- (void)addArrayMapper: (DCArrayMapping *)mapper {
+- (void)addArrayMapper: (DCArrayMapping*)mapper {
     [self.arrayMappers addObject:mapper];
     [self.objectMappers addObject:mapper.objectMapping];
 }
-- (void) addObjectMapping: (DCObjectMapping *) mapper {
+- (void) addObjectMapping: (DCObjectMapping*) mapper {
     [self.objectMappers addObject:mapper];
 }
-- (void) addAggregator: (DCPropertyAggregator *) aggregator {
+- (void) addAggregator: (DCPropertyAggregator*) aggregator {
     [self.aggregators addObject:aggregator];
 }
-- (void) addCustomInitializersObject:(DCCustomInitialize *) customInitialize {
+- (void) addCustomInitializersObject:(DCCustomInitialize*) customInitialize {
     [self.customInitializers addObject:customInitialize];
 }
-- (void) addCustomParsersObject:(DCCustomParser *)parser {
+- (void) addCustomParsersObject:(DCCustomParser*)parser {
     [self.customParsers addObject:parser];
 }
 
-- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary *)values {
+- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary*)values {
     return [self instantiateObjectForClass:classOfObjectToGenerate withValues:values parentObject:nil];
 }
 
-- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary *)values parentObject:(id)parentObject {
+- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary*)values parentObject:(id)parentObject {
     for(DCCustomInitialize *customInitialize in self.customInitializers){
         if([customInitialize isValidToPerformBlock:classOfObjectToGenerate]){
             return customInitialize.blockInitialize(classOfObjectToGenerate, values, parentObject);
@@ -83,7 +83,7 @@
     }
     return [[classOfObjectToGenerate alloc] init];
 }
-- (DCArrayMapping *) arrayMapperForMapper: (DCObjectMapping *) mapper {
+- (DCArrayMapping*) arrayMapperForMapper: (DCObjectMapping*) mapper {
     for(DCArrayMapping *arrayMapper in self.arrayMappers){
         DCObjectMapping *mapping = arrayMapper.objectMapping;
         BOOL sameKey = [mapping.keyReference isEqualToString:mapper.keyReference];
@@ -95,7 +95,7 @@
     }
     return nil;
 }
-- (NSString *) addUnderScoreToPropertyName: (NSString *) key{
+- (NSString*) addUnderScoreToPropertyName:(NSString*)key{
     if(!key || [key isEqualToString:@""]){
         return @"";
     }

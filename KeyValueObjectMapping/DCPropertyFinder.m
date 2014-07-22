@@ -21,11 +21,11 @@
 
 #pragma mark - public methods
 
-+ (DCPropertyFinder *) finderWithKeyParser: (DCReferenceKeyParser *) _keyParser {
++ (DCPropertyFinder*) finderWithKeyParser: (DCReferenceKeyParser*) _keyParser {
     return [[self alloc] initWithKeyParser:_keyParser];
 }
 
-- (DCDynamicAttribute *) findAttributeForKey: (NSString *) key onClass: (Class) class {
+- (DCDynamicAttribute*) findAttributeForKey:(NSString*)key onClass: (Class) class {
     NSString *originalKey = key;
     
     DCObjectMapping *mapper = [self findMapperForKey:key onClass:class];
@@ -61,12 +61,12 @@
     return dynamicAttribute;
 }
 
-- (void) setMappers: (NSArray *) mappers{
+- (void) setMappers: (NSArray*) mappers{
     _mappers = [NSArray arrayWithArray:mappers];
 }
 
 #pragma mark - private methods
-- (id)initWithKeyParser: (DCReferenceKeyParser *) keyParser {
+- (id)initWithKeyParser: (DCReferenceKeyParser*) keyParser {
     self = [super init];
     if (self) {
         _keyParser = keyParser;
@@ -75,7 +75,7 @@
     return self;
 }
 
-- (NSString *) findPropertyDetailsForKey: (NSString *)key onClass: (Class)class{
+- (NSString*) findPropertyDetailsForKey: (NSString*)key onClass: (Class)class{
     objc_property_t property = class_getProperty(class, [key UTF8String]);
     if (property) {
         NSString *attributeDetails = [NSString stringWithUTF8String:property_getAttributes(property)];
@@ -84,7 +84,7 @@
     return nil;
 }
 
-- (DCObjectMapping *) findMapperForKey: (NSString *) key onClass: (Class) class {
+- (DCObjectMapping*) findMapperForKey:(NSString*)key onClass: (Class) class {
     for(DCObjectMapping *mapper in self.mappers){
         if([mapper sameKey:key andClassReference:class]){
             return mapper;

@@ -17,9 +17,9 @@ typedef id(^DCCustomParserBlock)(__weak NSDictionary *dictionary, __weak NSStrin
 @property(nonatomic, readonly) DCCustomParserBlock blockParser;
 
 - (id) initWithBlockParser: (DCCustomParserBlock) blockParser
-          forAttributeName: (NSString *) attributeName
+          forAttributeName:(NSString*)attributeName
         onDestinationClass: (Class) classe;
 
-- (BOOL) isValidToPerformBlockOnAttributeName: (NSString *) attributeName
+- (BOOL) isValidToPerformBlockOnAttributeName:(NSString*)attributeName
                                      forClass: (Class) classe;
 @end

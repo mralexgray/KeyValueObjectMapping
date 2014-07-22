@@ -19,18 +19,18 @@
 @property(nonatomic, readonly, getter = isValidObject) BOOL validObject;
 
 - (id)initWithClass: (Class) classs;
-- (id)initWithAttributeDescription: (NSString *) description
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description
+                            forKey:(NSString*)key
                            onClass: (Class) classe;
 
-- (id)initWithAttributeDescription: (NSString *) description
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description
+                            forKey:(NSString*)key
                            onClass: (Class) classe
-                     attributeName: (NSString *) attibuteName;
+                     attributeName:(NSString*)attibuteName;
 
-- (id)initWithAttributeDescription: (NSString *) description
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description
+                            forKey:(NSString*)key
                            onClass: (Class) classe
-                     attributeName: (NSString *) attibuteName 
+                     attributeName:(NSString*)attibuteName 
                          converter:(id<DCValueConverter>) converter;
 @end

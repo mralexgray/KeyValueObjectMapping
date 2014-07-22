@@ -12,8 +12,8 @@
 @synthesize objectMapping = _objectMapping;
 @synthesize classForElementsOnArray = _classForElementsOnArray;
 
-+ (DCArrayMapping *) mapperForClassElements: (Class) classForElementsOnArray 
-                               forAttribute: (NSString *) attribute 
++ (DCArrayMapping*) mapperForClassElements: (Class) classForElementsOnArray 
+                               forAttribute:(NSString*)attribute 
                                     onClass: (Class) classReference{
     
     DCObjectMapping *objectMapping = [DCObjectMapping mapKeyPath:attribute 
@@ -24,13 +24,13 @@
                           forArrayElementOfType:classForElementsOnArray];
 }
 
-+ (DCArrayMapping *) mapperForClass: (Class) classForElementsOnArray 
-                          onMapping: (DCObjectMapping *) objectMapping {
++ (DCArrayMapping*) mapperForClass: (Class) classForElementsOnArray 
+                          onMapping: (DCObjectMapping*) objectMapping {
     return [[self alloc] initWithObjectMapping:objectMapping 
                          forArrayElementOfType:classForElementsOnArray];
 }
 
-- (id)initWithObjectMapping: (DCObjectMapping *) objectMapping
+- (id)initWithObjectMapping: (DCObjectMapping*) objectMapping
       forArrayElementOfType: (Class) classForElementsOnArray {
     
     self = [super init];

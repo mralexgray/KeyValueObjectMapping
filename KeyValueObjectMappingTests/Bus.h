@@ -14,6 +14,6 @@
 @property(nonatomic, readonly) NSString *name;
 @property(nonatomic, readonly) Location *location;
 
--(id)initWithName: (NSString *)name andLocation: (Location *) location;
+-(id)initWithName: (NSString*)name andLocation: (Location*) location;
 
 @end

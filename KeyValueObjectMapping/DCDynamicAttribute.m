@@ -10,8 +10,8 @@
 
 @interface DCDynamicAttribute()
 
-- (NSString *) findTypeInformation: (NSString *) typeInformation;
-- (NSString *) findTypeName: (NSString *) name;
+- (NSString*) findTypeInformation:(NSString*)typeInformation;
+- (NSString*) findTypeName:(NSString*)name;
 @end
 
 @implementation DCDynamicAttribute
@@ -30,28 +30,28 @@
     }
     return self;
 }
-- (id)initWithAttributeDescription: (NSString *) description
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description
+                            forKey:(NSString*)key
                            onClass: (Class) classe {
     return [self initWithAttributeDescription:description
                                        forKey:key
                                       onClass:classe
                                 attributeName:nil];
 }
-- (id)initWithAttributeDescription: (NSString *) description 
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description 
+                            forKey:(NSString*)key
                            onClass: (Class) classe
-                     attributeName: (NSString *) attibuteName {
+                     attributeName:(NSString*)attibuteName {
     return [self initWithAttributeDescription:description 
                                        forKey:key
                                       onClass:classe
                                 attributeName:attibuteName
                                     converter:nil];
 }
-- (id)initWithAttributeDescription: (NSString *) description
-                            forKey: (NSString *) key
+- (id)initWithAttributeDescription:(NSString*)description
+                            forKey:(NSString*)key
                            onClass: (Class) classe
-                     attributeName: (NSString *) attibuteName
+                     attributeName:(NSString*)attibuteName
                          converter: (id <DCValueConverter>)converter {
     
     
@@ -72,7 +72,7 @@
     return self;
     
 }
-- (NSString *) findTypeInformation: (NSString *) typeInformation {
+- (NSString*) findTypeInformation:(NSString*)typeInformation {
     NSString *attrituteClass = nil;
     
     BOOL isType = [[typeInformation substringToIndex:1] isEqualToString:@"T"];
@@ -88,7 +88,7 @@
     }
     return attrituteClass;
 }
-- (NSString *) findTypeName: (NSString *) name {
+- (NSString*) findTypeName:(NSString*)name {
     return [name substringFromIndex:1];
 }
 

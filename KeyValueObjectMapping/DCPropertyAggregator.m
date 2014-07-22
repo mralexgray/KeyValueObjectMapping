@@ -12,11 +12,11 @@
 @synthesize keysToAggregate = _keysToAggregate;
 @synthesize attribute = _attribute;
 
-+ (DCPropertyAggregator *) aggregateKeys: (NSSet *) keys intoAttribute: (NSString *) attribute {
++ (DCPropertyAggregator*) aggregateKeys: (NSSet*) keys intoAttribute:(NSString*)attribute {
     return [[self alloc] initWithKeysToAggregate:keys intoAttribute:attribute];
 }
 
-- (id)initWithKeysToAggregate: (NSSet *) keysToAggregate intoAttribute: (NSString *) attribute  {
+- (id)initWithKeysToAggregate: (NSSet*) keysToAggregate intoAttribute:(NSString*)attribute  {
     self = [super init];
     if (self) {
         _keysToAggregate = keysToAggregate;
@@ -25,7 +25,7 @@
     return self;
 }
 
-- (NSDictionary *) aggregateKeysOnDictionary: (NSDictionary *) baseDictionary {
+- (NSDictionary*) aggregateKeysOnDictionary: (NSDictionary*) baseDictionary {
     NSMutableDictionary *aggregateHolder = [[NSMutableDictionary alloc] init];
     for (NSString *key in baseDictionary) {
         if([self.keysToAggregate containsObject:key]){

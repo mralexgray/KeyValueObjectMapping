@@ -14,11 +14,11 @@
 @property(nonatomic, readonly) Class classForElementsOnArray;
 
 
-+ (DCArrayMapping *) mapperForClassElements: (Class) classForElementsOnArray 
-                               forAttribute: (NSString *) attribute 
++ (DCArrayMapping*) mapperForClassElements: (Class) classForElementsOnArray 
+                               forAttribute:(NSString*)attribute 
                                     onClass: (Class) classReference;
 
-+ (DCArrayMapping *) mapperForClass: (Class) classForElementsOnArray 
-                          onMapping: (DCObjectMapping *) objectMapping;
++ (DCArrayMapping*) mapperForClass: (Class) classForElementsOnArray 
+                          onMapping: (DCObjectMapping*) objectMapping;
 
 @end

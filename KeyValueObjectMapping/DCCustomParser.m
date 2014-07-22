@@ -13,7 +13,7 @@
 @synthesize attributeName = _attributeName;
 @synthesize destinationClass = _destinationClass;
 - (id) initWithBlockParser: (DCCustomParserBlock) blockParser
-          forAttributeName: (NSString *) attributeName
+          forAttributeName:(NSString*)attributeName
         onDestinationClass: (Class) classe {
     self = [super init];
     if(self){
@@ -24,7 +24,7 @@
     return self;
 }
 
-- (BOOL) isValidToPerformBlockOnAttributeName: (NSString *) attributeName
+- (BOOL) isValidToPerformBlockOnAttributeName:(NSString*)attributeName
                                      forClass: (Class) classe {
     return [_attributeName isEqualToString:attributeName] && classe == _destinationClass;
 }

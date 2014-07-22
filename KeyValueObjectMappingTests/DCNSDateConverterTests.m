@@ -10,7 +10,7 @@
 #import "DCNSDateConverter.h"
 @interface DCNSDateConverter()
 @property(nonatomic, strong) NSString *pattern;
-- (BOOL) validDouble: (NSString *) doubleValue;
+- (BOOL) validDouble:(NSString*)doubleValue;
 @end
 
 @implementation DCNSDateConverterTests

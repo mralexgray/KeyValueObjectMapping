@@ -19,15 +19,15 @@
 @property(nonatomic, readonly) NSMutableArray *customInitializers;
 @property(nonatomic, readonly) NSMutableArray *customParsers;
 
-+ (DCParserConfiguration *) configuration;
++ (DCParserConfiguration*) configuration;
 
-- (void) addArrayMapper: (DCArrayMapping *)mapper;
-- (void) addObjectMapping: (DCObjectMapping *) mapper;
-- (void) addAggregator: (DCPropertyAggregator *) aggregator;
-- (void) addCustomInitializersObject:(DCCustomInitialize *) customInitialize;
-- (void) addCustomParsersObject:(DCCustomParser *)parser;
+- (void) addArrayMapper: (DCArrayMapping*)mapper;
+- (void) addObjectMapping: (DCObjectMapping*) mapper;
+- (void) addAggregator: (DCPropertyAggregator*) aggregator;
+- (void) addCustomInitializersObject:(DCCustomInitialize*) customInitialize;
+- (void) addCustomParsersObject:(DCCustomParser*)parser;
 
-- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary *)values;
-- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary *)values parentObject:(id)parentObject;
-- (DCArrayMapping *) arrayMapperForMapper: (DCObjectMapping *) mapper;
+- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary*)values;
+- (id)instantiateObjectForClass:(Class)classOfObjectToGenerate withValues:(NSDictionary*)values parentObject:(id)parentObject;
+- (DCArrayMapping*) arrayMapperForMapper: (DCObjectMapping*) mapper;
 @end

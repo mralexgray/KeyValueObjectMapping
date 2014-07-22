@@ -139,7 +139,7 @@
     
     [user.tweets enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         STAssertEquals(tweetClass, [obj class], @"Should be a Tweet");
-        Tweet *tweet = (Tweet *) obj;
+        Tweet *tweet = (Tweet*) obj;
         STAssertNotNil(tweet.user, @"Should contain user on Tweet");
     }];
 }

@@ -11,6 +11,6 @@
 
 @interface DCDictionaryRearranger : NSObject
 
-+ (NSDictionary *) rearrangeDictionary: (NSDictionary *) dictionary forConfiguration: (DCParserConfiguration *) configuration;
++ (NSDictionary*) rearrangeDictionary: (NSDictionary*) dictionary forConfiguration: (DCParserConfiguration*) configuration;
 
 @end

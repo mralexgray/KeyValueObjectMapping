@@ -16,16 +16,16 @@
 @property(nonatomic, readonly) Class classReference;
 @property(nonatomic, readonly) id <DCValueConverter> converter;
 
-+ (DCObjectMapping *) mapKeyPath: (NSString *) keyPath 
-                     toAttribute: (NSString *) attributeName 
++ (DCObjectMapping*) mapKeyPath:(NSString*)keyPath 
+                     toAttribute:(NSString*)attributeName 
                          onClass: (Class) attributeClass;
 
-+ (DCObjectMapping *) mapKeyPath: (NSString *) keyPath 
-                     toAttribute: (NSString *) attributeName 
++ (DCObjectMapping*) mapKeyPath:(NSString*)keyPath 
+                     toAttribute:(NSString*)attributeName 
                          onClass: (Class) attributeClass
                        converter:(id <DCValueConverter>)converter;
 
 - (id)initWithClass: (Class) classReference;
-- (BOOL) sameKey: (NSString *) key andClassReference: (Class) classReference;
+- (BOOL) sameKey:(NSString*)key andClassReference: (Class) classReference;
 
 @end

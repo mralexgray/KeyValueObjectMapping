@@ -13,8 +13,8 @@
 @protocol DCValueConverter <NSObject>
 
 @required
-- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute dictionary:(NSDictionary *)dictionary parentObject:(id)parentObject;
-- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute *)attribute;
+- (id)transformValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute dictionary:(NSDictionary*)dictionary parentObject:(id)parentObject;
+- (id)serializeValue:(id)value forDynamicAttribute:(DCDynamicAttribute*)attribute;
 - (BOOL)canTransformValueForClass:(Class)class;
 
 @end
