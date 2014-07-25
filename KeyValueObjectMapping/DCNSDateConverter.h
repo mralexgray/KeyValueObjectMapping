@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "DCValueConverter.h"
+
 @interface DCNSDateConverter : NSObject <DCValueConverter>
+
+@property(readonly) NSString *pattern;
+
+- (BOOL) validDouble:(NSString*)doubleValue;
 
 + (DCNSDateConverter*) dateConverterForPattern:(NSString*)pattern;
 

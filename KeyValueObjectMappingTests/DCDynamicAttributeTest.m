@@ -6,9 +6,12 @@
 //  Copyright (c) 2012 None. All rights reserved.
 //
 
-#import "DCDynamicAttributeTest.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "DCDynamicAttribute.h"
 #import "Tweet.h"
+
+@interface DCDynamicAttributeTest : SenTestCase
+@end
 @implementation DCDynamicAttributeTest
 
 - (void) testDynamicAttributeForPrimitiveInt {

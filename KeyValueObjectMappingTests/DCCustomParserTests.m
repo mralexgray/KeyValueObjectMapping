@@ -6,10 +6,14 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCCustomParserTests.h"
+#import <SenTestingKit/SenTestingKit.h>
+
 #import "DCCustomParser.h"
 #import "User.h"
 #import "Tweet.h"
+
+@interface DCCustomParserTests : SenTestCase @end
+
 @implementation DCCustomParserTests
 
 - (void) testShouldCreateAnDCCustomInitialize {

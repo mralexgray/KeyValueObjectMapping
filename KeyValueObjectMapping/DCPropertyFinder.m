@@ -78,7 +78,7 @@
 - (NSString*) findPropertyDetailsForKey: (NSString*)key onClass: (Class)class{
     objc_property_t property = class_getProperty(class, [key UTF8String]);
     if (property) {
-        NSString *attributeDetails = [NSString stringWithUTF8String:property_getAttributes(property)];
+        NSString *attributeDetails = @(property_getAttributes(property));
         return attributeDetails;
     }
     return nil;

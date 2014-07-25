@@ -17,9 +17,6 @@
 		201F6F70153F789A009A24B9 /* DCAttributeSetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F6E153F789A009A24B9 /* DCAttributeSetter.m */; };
 		201F6F73153F7C9E009A24B9 /* DCDictionaryRearranger.h in Headers */ = {isa = PBXBuildFile; fileRef = 201F6F71153F7C9E009A24B9 /* DCDictionaryRearranger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		201F6F74153F7C9E009A24B9 /* DCDictionaryRearranger.m in Sources */ = {isa = PBXBuildFile; fileRef = 201F6F72153F7C9E009A24B9 /* DCDictionaryRearranger.m */; };
-		205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B3153F02AA00693E13 /* SenTestingKit.framework */; };
-		205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B5153F02AA00693E13 /* UIKit.framework */; };
-		205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 205FD3B7153F02AA00693E13 /* Foundation.framework */; };
 		205FD3BB153F02AA00693E13 /* KeyValueObjectMapping.framework in Resources */ = {isa = PBXBuildFile; fileRef = 205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */; };
 		205FD3C1153F02AA00693E13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 205FD3BF153F02AA00693E13 /* InfoPlist.strings */; };
 		205FD3D0153F02F700693E13 /* DCPropertyFinder.h in Headers */ = {isa = PBXBuildFile; fileRef = 205FD3CE153F02F700693E13 /* DCPropertyFinder.h */; };
@@ -69,12 +66,6 @@
 		20D62C201588EF2F00484122 /* DCNSSetConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C1E1588EF2F00484122 /* DCNSSetConverter.m */; };
 		20D62C241588F8D700484122 /* DCSerializationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D62C231588F8D700484122 /* DCSerializationTests.m */; };
 		2840FF7615E827F40047AF2E /* DCNSDateConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2840FF7515E827F40047AF2E /* DCNSDateConverterTests.m */; };
-		7B8B893317FAA68600F366C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893217FAA68600F366C4 /* Cocoa.framework */; };
-		7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B894317FAA68600F366C4 /* XCTest.framework */; };
-		7B8B894517FAA68600F366C4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893217FAA68600F366C4 /* Cocoa.framework */; };
-		7B8B894817FAA68600F366C4 /* libKVOMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8B893117FAA68600F366C4 /* libKVOMap.a */; };
-		7B8B894E17FAA68600F366C4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B8B894C17FAA68600F366C4 /* InfoPlist.strings */; };
-		7B8B895017FAA68600F366C4 /* KVOMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B8B894F17FAA68600F366C4 /* KVOMapTests.m */; };
 		7B8B895717FAA70B00F366C4 /* KVOMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B8B893B17FAA68600F366C4 /* KVOMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7B8B895817FAA74300F366C4 /* DCKeyValueObjectMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD402153F035700693E13 /* DCKeyValueObjectMapping.m */; };
 		7B8B895917FAA74300F366C4 /* DCPropertyFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 205FD3CF153F02F700693E13 /* DCPropertyFinder.m */; };
@@ -123,13 +114,6 @@
 			remoteGlobalIDString = 205FD3A2153F02AA00693E13;
 			remoteInfo = KeyValueObjectMapping;
 		};
-		7B8B894617FAA68600F366C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 205FD396153F02AA00693E13 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7B8B893017FAA68600F366C4;
-			remoteInfo = KVOMap;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -151,9 +135,6 @@
 		205FD3A7153F02AA00693E13 /* KeyValueObjectMapping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMapping-Info.plist"; sourceTree = "<group>"; };
 		205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KeyValueObjectMapping-Prefix.pch"; sourceTree = "<group>"; };
 		205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyValueObjectMappingTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		205FD3B3153F02AA00693E13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		205FD3B5153F02AA00693E13 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		205FD3B7153F02AA00693E13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		205FD3BE153F02AA00693E13 /* KeyValueObjectMappingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KeyValueObjectMappingTests-Info.plist"; sourceTree = "<group>"; };
 		205FD3C0153F02AA00693E13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		205FD3CE153F02F700693E13 /* DCPropertyFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPropertyFinder.h; sourceTree = "<group>"; };
@@ -217,17 +198,8 @@
 		2840FF7415E827F40047AF2E /* DCNSDateConverterTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCNSDateConverterTests.h; sourceTree = "<group>"; };
 		2840FF7515E827F40047AF2E /* DCNSDateConverterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCNSDateConverterTests.m; sourceTree = "<group>"; };
 		7B8B893117FAA68600F366C4 /* libKVOMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKVOMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B8B893217FAA68600F366C4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		7B8B893517FAA68600F366C4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		7B8B893617FAA68600F366C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		7B8B893717FAA68600F366C4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7B8B893A17FAA68600F366C4 /* KVOMap-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KVOMap-Prefix.pch"; sourceTree = "<group>"; };
 		7B8B893B17FAA68600F366C4 /* KVOMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOMap.h; sourceTree = "<group>"; };
-		7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		7B8B894317FAA68600F366C4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7B8B894B17FAA68600F366C4 /* KVOMapTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KVOMapTests-Info.plist"; sourceTree = "<group>"; };
-		7B8B894D17FAA68600F366C4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		7B8B894F17FAA68600F366C4 /* KVOMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOMapTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,9 +214,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				205FD3B4153F02AA00693E13 /* SenTestingKit.framework in Frameworks */,
-				205FD3B6153F02AA00693E13 /* UIKit.framework in Frameworks */,
-				205FD3B8153F02AA00693E13 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,17 +221,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B8B893317FAA68600F366C4 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B8B893F17FAA68600F366C4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B8B894817FAA68600F366C4 /* libKVOMap.a in Frameworks */,
-				7B8B894517FAA68600F366C4 /* Cocoa.framework in Frameworks */,
-				7B8B894417FAA68600F366C4 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +242,6 @@
 				205FD3A5153F02AA00693E13 /* KeyValueObjectMapping */,
 				205FD3BC153F02AA00693E13 /* KeyValueObjectMappingTests */,
 				7B8B893817FAA68600F366C4 /* KVOMap */,
-				7B8B894917FAA68600F366C4 /* KVOMapTests */,
-				205FD3B2153F02AA00693E13 /* Frameworks */,
 				205FD3A4153F02AA00693E13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -296,7 +252,6 @@
 				205FD3A3153F02AA00693E13 /* KeyValueObjectMapping.framework */,
 				205FD3B1153F02AA00693E13 /* KeyValueObjectMappingTests.octest */,
 				7B8B893117FAA68600F366C4 /* libKVOMap.a */,
-				7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -325,19 +280,6 @@
 				205FD3AB153F02AA00693E13 /* KeyValueObjectMapping-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		205FD3B2153F02AA00693E13 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				205FD3B3153F02AA00693E13 /* SenTestingKit.framework */,
-				205FD3B5153F02AA00693E13 /* UIKit.framework */,
-				205FD3B7153F02AA00693E13 /* Foundation.framework */,
-				7B8B893217FAA68600F366C4 /* Cocoa.framework */,
-				7B8B894317FAA68600F366C4 /* XCTest.framework */,
-				7B8B893417FAA68600F366C4 /* Other Frameworks */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		205FD3BC153F02AA00693E13 /* KeyValueObjectMappingTests */ = {
@@ -485,16 +427,6 @@
 			name = Objecs;
 			sourceTree = "<group>";
 		};
-		7B8B893417FAA68600F366C4 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B8B893517FAA68600F366C4 /* Foundation.framework */,
-				7B8B893617FAA68600F366C4 /* CoreData.framework */,
-				7B8B893717FAA68600F366C4 /* AppKit.framework */,
-			);
-			name = "Other Frameworks";
-			sourceTree = "<group>";
-		};
 		7B8B893817FAA68600F366C4 /* KVOMap */ = {
 			isa = PBXGroup;
 			children = (
@@ -502,24 +434,6 @@
 				7B8B893A17FAA68600F366C4 /* KVOMap-Prefix.pch */,
 			);
 			path = KVOMap;
-			sourceTree = "<group>";
-		};
-		7B8B894917FAA68600F366C4 /* KVOMapTests */ = {
-			isa = PBXGroup;
-			children = (
-				7B8B894F17FAA68600F366C4 /* KVOMapTests.m */,
-				7B8B894A17FAA68600F366C4 /* Supporting Files */,
-			);
-			path = KVOMapTests;
-			sourceTree = "<group>";
-		};
-		7B8B894A17FAA68600F366C4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				7B8B894B17FAA68600F366C4 /* KVOMapTests-Info.plist */,
-				7B8B894C17FAA68600F366C4 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,24 +552,6 @@
 			productReference = 7B8B893117FAA68600F366C4 /* libKVOMap.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		7B8B894117FAA68600F366C4 /* KVOMapTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7B8B895617FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMapTests" */;
-			buildPhases = (
-				7B8B893E17FAA68600F366C4 /* Sources */,
-				7B8B893F17FAA68600F366C4 /* Frameworks */,
-				7B8B894017FAA68600F366C4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				7B8B894717FAA68600F366C4 /* PBXTargetDependency */,
-			);
-			name = KVOMapTests;
-			productName = KVOMapTests;
-			productReference = 7B8B894217FAA68600F366C4 /* KVOMapTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -665,11 +561,6 @@
 				CLASSPREFIX = DC;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = dchohfi;
-				TargetAttributes = {
-					7B8B894117FAA68600F366C4 = {
-						TestTargetID = 205FD3A2153F02AA00693E13;
-					};
-				};
 			};
 			buildConfigurationList = 205FD399153F02AA00693E13 /* Build configuration list for PBXProject "KeyValueObjectMapping" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -683,10 +574,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				7B8B893017FAA68600F366C4 /* KVOMap */,
 				205FD3A2153F02AA00693E13 /* KeyValueObjectMapping */,
 				205FD3B0153F02AA00693E13 /* KeyValueObjectMappingTests */,
-				7B8B893017FAA68600F366C4 /* KVOMap */,
-				7B8B894117FAA68600F366C4 /* KVOMapTests */,
 			);
 		};
 /* End PBXProject section */
@@ -708,14 +598,6 @@
 				205FD425153F041F00693E13 /* plist.plist in Resources */,
 				205FD426153F041F00693E13 /* tweet.json in Resources */,
 				205FD427153F041F00693E13 /* user.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7B8B894017FAA68600F366C4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B8B894E17FAA68600F366C4 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,14 +733,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B8B893E17FAA68600F366C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7B8B895017FAA68600F366C4 /* KVOMapTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -867,11 +741,6 @@
 			target = 205FD3A2153F02AA00693E13 /* KeyValueObjectMapping */;
 			targetProxy = 205FD3B9153F02AA00693E13 /* PBXContainerItemProxy */;
 		};
-		7B8B894717FAA68600F366C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7B8B893017FAA68600F366C4 /* KVOMap */;
-			targetProxy = 7B8B894617FAA68600F366C4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -879,14 +748,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				205FD3C0153F02AA00693E13 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		7B8B894C17FAA68600F366C4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B8B894D17FAA68600F366C4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -1122,75 +983,6 @@
 			};
 			name = Release;
 		};
-		7B8B895317FAA68700F366C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyValueObjectMapping.framework/Versions/A/KeyValueObjectMapping";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		7B8B895417FAA68700F366C4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KeyValueObjectMapping.framework/Versions/A/KeyValueObjectMapping";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-				);
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KVOMap/KVOMap-Prefix.pch";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = "KVOMapTests/KVOMapTests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1226,15 +1018,6 @@
 			buildConfigurations = (
 				7B8B895117FAA68700F366C4 /* Debug */,
 				7B8B895217FAA68700F366C4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7B8B895617FAA68700F366C4 /* Build configuration list for PBXNativeTarget "KVOMapTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7B8B895317FAA68700F366C4 /* Debug */,
-				7B8B895417FAA68700F366C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -6,13 +6,12 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCReferenceKeyParserTests.h"
+#import <SenTestingKit/SenTestingKit.h>
+
 #import "DCReferenceKeyParser.h"
 
-@interface DCReferenceKeyParserTests()
-
-@property(nonatomic, strong) DCReferenceKeyParser *parser;
-
+@interface DCReferenceKeyParserTests : SenTestCase
+@property(nonatomic) DCReferenceKeyParser *parser;
 @end
 
 @implementation DCReferenceKeyParserTests

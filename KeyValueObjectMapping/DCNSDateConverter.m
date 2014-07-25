@@ -9,10 +9,10 @@
 #import "DCNSDateConverter.h"
 #import "DCDynamicAttribute.h"
 
-@interface DCNSDateConverter()
-@property(nonatomic, strong) NSString *pattern;
-- (BOOL) validDouble:(NSString*)doubleValue;
-@end
+//@interface DCNSDateConverter()
+//@property(nonatomic, strong) NSString *pattern;
+//- (BOOL) validDouble:(NSString*)doubleValue;
+//@end
 
 @implementation DCNSDateConverter
 @synthesize pattern = _pattern;
@@ -49,6 +49,6 @@
     return [class isSubclassOfClass:[NSDate class]];
 }
 - (BOOL) validDouble:(NSString*)doubleValue {
-  return [[[NSNumberFormatter alloc] init] numberFromString:doubleValue] != nil;
+  return [NSNumberFormatter.new numberFromString:doubleValue] != nil;
 }
 @end

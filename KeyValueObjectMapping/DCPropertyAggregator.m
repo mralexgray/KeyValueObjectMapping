@@ -29,7 +29,7 @@
     NSMutableDictionary *aggregateHolder = [[NSMutableDictionary alloc] init];
     for (NSString *key in baseDictionary) {
         if([self.keysToAggregate containsObject:key]){
-            [aggregateHolder setValue:[baseDictionary objectForKey:key] forKey:key];
+            [aggregateHolder setValue:baseDictionary[key] forKey:key];
         }
     }
     return [NSDictionary dictionaryWithDictionary:aggregateHolder];

@@ -6,17 +6,16 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCArrayOfTweetsOnUserTests.h"
+#import <SenTestingKit/SenTestingKit.h>
+
 #import "DCKeyValueObjectMapping.h"
 #import "DCArrayMapping.h"
 #import "DCParserConfiguration.h"
 #import "Tweet.h"
 #import "User.h"
 
-@interface DCArrayOfTweetsOnUserTests()
-
-@property(nonatomic, strong) NSMutableDictionary *jsonParsed;
-
+@interface DCArrayOfTweetsOnUserTests : SenTestCase
+@property(nonatomic) NSMutableDictionary *jsonParsed;
 @end
 
 @implementation DCArrayOfTweetsOnUserTests

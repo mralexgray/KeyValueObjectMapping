@@ -6,11 +6,12 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCNSDateConverterTests.h"
+
 #import "DCNSDateConverter.h"
-@interface DCNSDateConverter()
-@property(nonatomic, strong) NSString *pattern;
-- (BOOL) validDouble:(NSString*)doubleValue;
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface DCNSDateConverterTests : SenTestCase
+
 @end
 
 @implementation DCNSDateConverterTests

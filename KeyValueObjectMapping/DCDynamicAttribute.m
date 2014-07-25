@@ -64,7 +64,7 @@
         if (attributeName.length == 0 && attibuteName.length){
             attributeName = attibuteName;
         }
-        _typeName = [self findTypeInformation:[splitedDescription objectAtIndex:0]];
+        _typeName = [self findTypeInformation:splitedDescription[0]];
         
         Class attributeClass = NSClassFromString(self.typeName);
         _objectMapping = [DCObjectMapping mapKeyPath:key toAttribute:attributeName onClass:attributeClass converter:converter];

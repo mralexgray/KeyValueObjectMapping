@@ -38,7 +38,7 @@
         return nil;
     }
     
-    BOOL primitiveArray = ![[[values objectAtIndex:0] class] isSubclassOfClass:[NSDictionary class]];
+    BOOL primitiveArray = ![[values[0] class] isSubclassOfClass:[NSDictionary class]];
     if (primitiveArray) {
         return [self parsePrimitiveValues:values dictionary:dictionary parentObject:parentObject];
     } else {

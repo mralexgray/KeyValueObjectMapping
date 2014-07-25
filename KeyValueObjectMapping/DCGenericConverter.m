@@ -28,11 +28,10 @@
     self = [super init];
     if (self) {
         _configuration = configuration;
-        _parsers = [NSArray arrayWithObjects:
-                   [DCNSDateConverter dateConverterForPattern:self.configuration.datePattern],
+        _parsers = @[[DCNSDateConverter dateConverterForPattern:self.configuration.datePattern],
                    [DCNSURLConverter urlConverter],
                    [DCNSArrayConverter arrayConverterForConfiguration: self.configuration], 
-                   [DCNSSetConverter setConverterForConfiguration: self.configuration], nil];
+                   [DCNSSetConverter setConverterForConfiguration: self.configuration]];
     }
     return self;
 }

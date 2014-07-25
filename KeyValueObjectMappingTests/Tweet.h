@@ -19,7 +19,7 @@
 @property(nonatomic, readonly) NSString *inReplyToUserIdStr;
 @property(nonatomic, readonly) NSString *inReplyToScreenName;
 @property(nonatomic, readonly) User *user;
-@property(nonatomic, readonly) NSNumber *retweetCount;
+@property(readonly) NSUInteger retweetCount;
 @property(nonatomic, readonly) BOOL favorited;
 @property(nonatomic, readonly) BOOL retweeted;
 @property(nonatomic, strong) NSDate *data;

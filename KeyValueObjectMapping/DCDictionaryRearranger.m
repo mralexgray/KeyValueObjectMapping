@@ -19,11 +19,11 @@
     NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionaryWithDictionary:dictionary];
     if(aggregators && [aggregators count] > 0){
         for(int i=(int)[aggregators count] - 1; i >= 0; --i){
-            DCPropertyAggregator* aggregator = [aggregators objectAtIndex:i];
+            DCPropertyAggregator* aggregator = aggregators[i];
             [aggregators removeObject:aggregator];
             NSMutableDictionary *aggregatedValues = [[aggregator aggregateKeysOnDictionary:mutableDictionary] mutableCopy];
-            if([mutableDictionary objectForKey:aggregator.attribute]){
-                [aggregatedValues addEntriesFromDictionary:[mutableDictionary objectForKey:aggregator.attribute]];
+            if(mutableDictionary[aggregator.attribute]){
+                [aggregatedValues addEntriesFromDictionary:mutableDictionary[aggregator.attribute]];
             }
             [mutableDictionary setValue:aggregatedValues forKey:aggregator.attribute];
         }
@@ -37,10 +37,10 @@
             
             for (NSString* key in keys) {
                 if ([key isEqualToString:keys[0]]) {
-                    value = [mutableDictionary objectForKey:key];
+                    value = mutableDictionary[key];
                 } else if ([value isKindOfClass:[NSDictionary class]]) {
                     NSDictionary* dict = (NSDictionary*)value;
-                    value = [dict objectForKey:key];
+                    value = dict[key];
                     if ([key isEqualToString:[keys lastObject]]) {
                         [mutableDictionary setValue:value forKey:mapper.keyReference];
                     }

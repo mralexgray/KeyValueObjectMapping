@@ -29,9 +29,9 @@
         return @"";
     NSArray *splitedKeys = [key componentsSeparatedByString:splitToken];
     NSMutableString *parsedKeyName = [NSMutableString string];
-    [parsedKeyName appendString:[[splitedKeys objectAtIndex:0] lowercaseString]];
+    [parsedKeyName appendString:[splitedKeys[0] lowercaseString]];
     for(int i=1; i<[splitedKeys count]; i++){
-        NSString *splitedKey = [splitedKeys objectAtIndex:i];
+        NSString *splitedKey = splitedKeys[i];
         [parsedKeyName appendString:[[splitedKey substringWithRange:NSMakeRange(0, 1)] uppercaseString]];
         [parsedKeyName appendString:[[splitedKey substringFromIndex:1] lowercaseString]];
     }

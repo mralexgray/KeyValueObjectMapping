@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCPropertyFinderTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "DCPropertyFinder.h"
 #import "User.h"
 #import "Person.h"
-@interface DCPropertyFinderTests()
 
+
+@interface DCPropertyFinderTests : SenTestCase
 @property(nonatomic, strong) DCPropertyFinder *finder;
-
 @end
 
 @implementation DCPropertyFinderTests
@@ -44,7 +44,7 @@
 
 - (void) testOverrideAttributeFinderForNameOnUser {
     DCObjectMapping *mapping = [DCObjectMapping mapKeyPath:@"borba" toAttribute:@"name" onClass:[User class]];
-    [finder setMappers:[NSArray arrayWithObject:mapping]];
+    [finder setMappers:@[mapping]];
  
     DCDynamicAttribute *dynamicProperty = [finder findAttributeForKey:@"borba" onClass:[User class]];
     STAssertNotNil(dynamicProperty, @"Should be able to find name property on User class");

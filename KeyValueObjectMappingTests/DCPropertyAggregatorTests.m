@@ -6,22 +6,26 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCPropertyAggregatorTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "DCKeyValueObjectMapping.h"
 #import "DCParserConfiguration.h"
 #import "DCDictionaryRearranger.h"
 #import "DCPropertyAggregator.h"
 #import "Bus.h"
+
+@interface DCPropertyAggregatorTests : SenTestCase
+@end
+
 @implementation DCPropertyAggregatorTests
 
 - (void) testAggregateProperties {
     NSString *busName = @"R. Dr. Neto De Araujo, 311";
-    NSNumber *latitude = [NSNumber numberWithInt:-123];
-    NSNumber *longitude = [NSNumber numberWithInt:-321];
+    NSNumber *latitude = @-123;
+    NSNumber *longitude = @-321;
     NSMutableDictionary *dictionaryToParse = [[NSMutableDictionary alloc] init];
-    [dictionaryToParse setObject:busName forKey:@"name"];
-    [dictionaryToParse setObject:latitude forKey:@"latitude"];
-    [dictionaryToParse setObject:longitude forKey:@"longitude"];
+    dictionaryToParse[@"name"] = busName;
+    dictionaryToParse[@"latitude"] = latitude;
+    dictionaryToParse[@"longitude"] = longitude;
     
     NSSet *keys = [NSSet setWithObjects:@"latitude", @"longitude", nil];
     DCPropertyAggregator *aggregator = [DCPropertyAggregator aggregateKeys:keys
@@ -41,14 +45,14 @@
 
 - (void) testAggregateMultipleRules {
     NSString *busName = @"R. Dr. Neto De Araujo, 311";
-    NSNumber *latitude = [NSNumber numberWithInt:-123];
-    NSNumber *longitude = [NSNumber numberWithInt:-321];
-    NSNumber *distance = [NSNumber numberWithInt:100];
+    NSNumber *latitude = @-123;
+    NSNumber *longitude = @-321;
+    NSNumber *distance = @100;
     NSMutableDictionary *dictionaryToParse = [[NSMutableDictionary alloc] init];
-    [dictionaryToParse setObject:busName forKey:@"name"];
-    [dictionaryToParse setObject:latitude forKey:@"latitude"];
-    [dictionaryToParse setObject:longitude forKey:@"longitude"];
-    [dictionaryToParse setObject:distance forKey:@"distance"];
+    dictionaryToParse[@"name"] = busName;
+    dictionaryToParse[@"latitude"] = latitude;
+    dictionaryToParse[@"longitude"] = longitude;
+    dictionaryToParse[@"distance"] = distance;
 
     DCPropertyAggregator *aggregteLatLong = [DCPropertyAggregator aggregateKeys:[NSSet setWithObjects:@"latitude", @"longitude", nil] intoAttribute:@"point"];
 
@@ -59,10 +63,10 @@
     [configuration addAggregator:aggregatePointDist];
     NSDictionary *aggregatedDict = [DCDictionaryRearranger rearrangeDictionary:dictionaryToParse forConfiguration:configuration];
     STAssertNotNil(aggregatedDict, @"Should be able to create a location using aggregator");
-    STAssertEqualObjects([aggregatedDict objectForKey:@"name"], busName, @"Should be equals");
-    STAssertEqualObjects([[aggregatedDict objectForKey:@"location"] objectForKey:@"distance"], distance, @"Should be equals");
-    STAssertEqualObjects([[[aggregatedDict objectForKey:@"location"] objectForKey:@"point"] objectForKey:@"latitude"], latitude, @"Should be equals");
-    STAssertEqualObjects([[[aggregatedDict objectForKey:@"location"] objectForKey:@"point"] objectForKey:@"longitude"], longitude, @"Should be equals");
+    STAssertEqualObjects(aggregatedDict[@"name"], busName, @"Should be equals");
+    STAssertEqualObjects(aggregatedDict[@"location"][@"distance"], distance, @"Should be equals");
+    STAssertEqualObjects(aggregatedDict[@"location"][@"point"][@"latitude"], latitude, @"Should be equals");
+    STAssertEqualObjects(aggregatedDict[@"location"][@"point"][@"longitude"], longitude, @"Should be equals");
 }
 
 

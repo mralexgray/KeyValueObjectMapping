@@ -6,11 +6,14 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCParserConfigurationTest.h"
 #import "DCParserConfiguration.h"
 #import "DCCustomInitialize.h"
 #import "Tweet.h"
 #import "User.h"
+#import <SenTestingKit/SenTestingKit.h>
+
+@interface DCParserConfigurationTest : SenTestCase @end
+
 @implementation DCParserConfigurationTest
 
 - (void) testCreateCustomTweetWithBlock {

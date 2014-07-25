@@ -6,20 +6,17 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCSerializationTests.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "DCKeyValueObjectMapping.h"
 #import "DCObjectMapping.h"
 #import "DCParserConfiguration.h"
 #import "Bus.h"
 
-@interface DCSerializationTests()
-
-@property(nonatomic, strong) DCKeyValueObjectMapping *parser;
-
+@interface DCSerializationTests : SenTestCase
+@property(nonatomic) DCKeyValueObjectMapping *parser;
 @end
 
-@implementation DCSerializationTests
-@synthesize parser;
+@implementation DCSerializationTests @synthesize parser;
 
 -(void)setUp {
     DCParserConfiguration *configuration = [DCParserConfiguration configuration];
@@ -34,12 +31,12 @@
 }
 
 - (void)testSimpleFieldSerialization {
-    Location *localizacao = [[Location alloc] initWithLatitude:[NSNumber numberWithInt:10] andLongitude:[NSNumber numberWithInt:20]];
+    Location *localizacao = [[Location alloc] initWithLatitude:@10 andLongitude:@20];
     Bus *bus = [[Bus alloc] initWithName:@"Vila carrão" andLocation:localizacao];
     
     NSDictionary *busParsed = [parser serializeObject:bus];
-    STAssertTrue([[busParsed objectForKey:@"name"] isEqualToString:@"Vila carrão"], nil);
-    STAssertTrue([[busParsed objectForKey:@"name"] isEqualToString:@"Vila carrão"], nil);
+    STAssertTrue([busParsed[@"name"] isEqualToString:@"Vila carrão"], nil);
+    STAssertTrue([busParsed[@"name"] isEqualToString:@"Vila carrão"], nil);
 }
 
 

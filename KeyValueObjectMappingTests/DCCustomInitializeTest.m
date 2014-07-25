@@ -6,12 +6,16 @@
 //  Copyright (c) 2012 dchohfi. All rights reserved.
 //
 
-#import "DCCustomInitializeTest.h"
+#import <SenTestingKit/SenTestingKit.h>
 #import "DCCustomInitialize.h"
 #import "Tweet.h"
 #import "Person.h"
 #import "DCParserConfiguration.h"
 #import "DCKeyValueObjectMapping.h"
+
+@interface DCCustomInitializeTest : SenTestCase
+
+@end
 
 @implementation DCCustomInitializeTest
 
